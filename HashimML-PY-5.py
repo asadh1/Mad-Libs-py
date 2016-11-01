@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import pwd
 
 # Functions
 def getTxt(file_path):
@@ -43,7 +44,7 @@ class Mad_libs():
         continue
     print(data)
 
-_taoe = Mad_libs("The Art Of Espionage", "/Users/hibaasad/Documents/HashimProjects/HashimML-PY-5/madlibs_str.txt")
+_taoe = Mad_libs("The Art Of Espionage", "/Users/{}/Downloads/Mad-Libs-py-master/madlibs_str.txt".format(pwd.getpwuid(os.getuid())[0]))
 
-_iyga = Mad_libs("If You Give A •••", "/Users/hibaasad/Documents/HashimProjects/HashimML-PY-5/madlibs_str2.txt")
+_iyga = Mad_libs("If You Give A •••", "/Users/{}/Downloads/Mad-Libs-py-master/madlibs_str2.txt".format(pwd.getpwuid(os.getuid())[0]))
 _iyga.start_game()
