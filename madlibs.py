@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import os
-import pwd
-
 # Functions
 def getTxt(file_path):
   # Read from file:
@@ -46,7 +43,7 @@ class Mad_libs():
     print(data)
 
 # Change the file paths if you move the file or if you're not using a mac
-_taoe = Mad_libs("The Art Of Espionage", "/Users/{}/Downloads/Mad-Libs-py-master/madlibs_str.txt".format(pwd.getpwuid(os.getuid())[0]))
+_taoe = Mad_libs("The Art Of Espionage", "madlibs_str.txt")
 
-_iyga = Mad_libs("If You Give A •••", "/Users/{}/Downloads/Mad-Libs-py-master/madlibs_str2.txt".format(pwd.getpwuid(os.getuid())[0]))
+_iyga = Mad_libs("If You Give A •••", "madlibs_str2.txt")
 _iyga.start_game()
