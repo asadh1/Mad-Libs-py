@@ -42,7 +42,6 @@ class Mad_libs():
         continue
     print(data)
 
-# Change the file paths if you move the file or if you're not using a mac
 _taoe = Mad_libs("The Art Of Espionage", "madlibs_str.txt")
 
 _iyga = Mad_libs("If You Give A •••", "madlibs_str2.txt")
